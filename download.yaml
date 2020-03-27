@@ -1,0 +1,36 @@
+resources:
+
+  # CONFD
+  - url: "https://github.com/kelseyhightower/confd/releases/download/v0.16.0/confd-0.16.0-linux-amd64"
+    filename: "confd"
+    validation:
+      type: "sha256"
+      value: "255d2559f3824dd64df059bdc533fd6b697c070db603c76aaf8d1d5e6b0cc334"
+
+  # DOCKER
+  - url: "https://get.docker.com/builds/Linux/x86_64/docker-1.12.3.tgz"
+    filename: "docker.tgz"
+    validation:
+      type: "sha256"
+      value: "626601deb41d9706ac98da23f673af6c0d4631c4d194a677a9a1a07d7219fa0f"
+
+  # ETCD
+  - url: "https://github.com/coreos/etcd/releases/download/v3.3.10/etcd-v3.3.10-linux-amd64.tar.gz"
+    filename: "etcd.tgz"
+    validation:
+      type: "sha256"
+      value: "1620a59150ec0a0124a65540e23891243feb2d9a628092fb1edcc23974724a45"
+
+  # CNI
+  - url: "https://github.com/containernetworking/cni/releases/download/v0.4.0/cni-amd64-v0.4.0.tgz"
+    filename: "cni.tgz"
+    validation:
+      type: "sha256"
+      value: "84c9a0a41b59211d560bef14bf3f53bb370156f9ac7762270b3848fed96e1be8"
+
+  # PORTMAP
+  - url: "https://github.com/rancher/plugins/releases/download/v1.9.1-rancher1/portmap-amd64"
+    filename: "portmap"
+    validation:
+      type: "sha256"
+      value: "0758c8c5a99b7fb8b6c7933cb830e3785e6564c17d9d15d9765f47b3f90162c1"
